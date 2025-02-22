@@ -7,11 +7,11 @@ def get_student_score():
     score = input("Enter your score: ")
     
     try:
-        score = float(score) 
+        score = float(score)  
         return score
     except ValueError:
         print("Invalid input. Please enter a valid numeric score.")
-        return get_student_score() 
+        return get_student_score()  
 
 def calculate_grade(score):
     """
@@ -41,7 +41,7 @@ def main():
     
     grade = calculate_grade(score)
     
-     print(f"Your Grade is: {grade}")
+    print(f"Your Grade is: {grade}")
 
 if __name__ == "__main__":
     main()
